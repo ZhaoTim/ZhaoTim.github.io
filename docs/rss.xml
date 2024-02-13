@@ -1,2 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TimZhao</title><link>https://zhaotim.github.io/</link><description>一个小胖子👨‍💻，欢迎~</description><copyright>TimZhao</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i.v2ex.co/Ie6u2D3Ms.jpeg</url><title>avatar</title><link>https://zhaotim.github.io/</link></image><lastBuildDate>Tue, 13 Feb 2024 09:08:59 +0000</lastBuildDate><managingEditor>TimZhao</managingEditor><ttl>60</ttl><webMaster>TimZhao</webMaster><item><title>备忘录</title><link>https://zhaotim.github.io//post/bei-wang-lu.html</link><description>6月18日，又是一年父亲节。</description><guid isPermaLink="true">https://zhaotim.github.io//post/bei-wang-lu.html</guid><pubDate>Mon, 16 Oct 2023 16:16:50 +0000</pubDate></item><item><title>最近我还在活着吧？</title><link>https://zhaotim.github.io//post/zui-jin-wo-huan-zai-huo-zhao-ba-%EF%BC%9F.html</link><description>- 准备把椭圆机卖了，腰疼。</description><guid isPermaLink="true">https://zhaotim.github.io//post/zui-jin-wo-huan-zai-huo-zhao-ba-%EF%BC%9F.html</guid><pubDate>Mon, 16 Oct 2023 13:26:04 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TimZhao</title><link>https://zhaotim.github.io/</link><description>一个小胖子👨‍💻，欢迎~</description><copyright>TimZhao</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i.v2ex.co/Ie6u2D3Ms.jpeg</url><title>avatar</title><link>https://zhaotim.github.io/</link></image><lastBuildDate>Tue, 13 Feb 2024 11:53:11 +0000</lastBuildDate><managingEditor>TimZhao</managingEditor><ttl>60</ttl><webMaster>TimZhao</webMaster><item><title>备忘录</title><link>https://zhaotim.github.io//post/bei-wang-lu.html</link><description>function App() {&#13;
+  const [count, setCount] = useState(0);&#13;
+  useEffect(() =&gt; {&#13;
+    if (count === 0) {&#13;
+      const now = performance.now();&#13;
+      while (performance.now() - now &lt; 200) {}&#13;
+      setCount(10 + Math.random() * 200);&#13;
+    }&#13;
+  }, [count]);&#13;
+&#13;
+  return &lt;div onClick={() =&gt; setCount(0)}&gt;{count}&lt;/div&gt;;&#13;
+}&#13;
+&#13;
+&#13;
+上面的代码加载后，App组件被渲染了两次。</description><guid isPermaLink="true">https://zhaotim.github.io//post/bei-wang-lu.html</guid><pubDate>Mon, 16 Oct 2023 16:16:50 +0000</pubDate></item><item><title>最近我还在活着吧？</title><link>https://zhaotim.github.io//post/zui-jin-wo-huan-zai-huo-zhao-ba-%EF%BC%9F.html</link><description>- 准备把椭圆机卖了，腰疼。</description><guid isPermaLink="true">https://zhaotim.github.io//post/zui-jin-wo-huan-zai-huo-zhao-ba-%EF%BC%9F.html</guid><pubDate>Mon, 16 Oct 2023 13:26:04 +0000</pubDate></item></channel></rss>
