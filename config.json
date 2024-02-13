@@ -6,6 +6,5 @@
   "avatarUrl":"https://i.v2ex.co/Ie6u2D3Ms.jpeg",
   "faviconUrl":"http://meekdai.com/favicon.ico",
   "singlePage":["link","about"],
-  "GMEEK_VERSION":"v2.4",
-  "style":"<style>#postBody{font-size:20px}</style>",
+  "GMEEK_VERSION":"last"
 }
