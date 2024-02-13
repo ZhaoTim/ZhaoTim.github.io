@@ -15,7 +15,7 @@
     
 <meta name="description" content="备忘录">
 <title>备忘录</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 </head>
 <style>
@@ -71,36 +71,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody" style="font-family: 'ZhuqueFangsong-Regular 2';"><p>function App() {<br>
-const [count, setCount] = useState(0);<br>
-useEffect(() =&gt; {<br>
-if (count === 0) {<br>
-const now = performance.now();<br>
-while (performance.now() - now &lt; 200) {}<br>
-setCount(10 + Math.random() * 200);<br>
-}<br>
-}, [count]);</p>
-<p>return &lt;div onClick={() =&gt; setCount(0)}&gt;{count};<br>
-}</p>
-<p>上面的代码加载后，App组件被渲染了两次。</p>
-<p>在首次渲染中，count state的值为0，页面显示0。</p>
-<p>useEffect 在首次渲染已经绘制到屏幕以后，被调用，此时的count 满足等于0的条件，while语句阻塞了200毫秒，下一行setCount 触发了第二份渲染（暂且假定参数是100）。</p>
-<p>在第二次渲染的过程中，count 是100，所以页面显示100。</p>
-<p>100会被绘制到屏幕以后，useEffect 对比上一次渲染的count （值为0）与这次渲染的count （值为100），发现不一样，所以useEffect 被调用，但是不满足等于0的条件。</p>
-<p>至此，以上是页面加载之后，App组件经历的一切了，可是页面存在0 -&gt; 100的过程，会闪烁，需要解决这个问题。</p>
-<p>useEffect 会保证在本次更新已经绘制到屏幕上之后被调用。</p>
-<p>针对这条结论，我一直都存在疑惑，难道还有浏览器绘制完的事件去订阅吗？<a href="https://juejin.cn/post/7066778581770190885" rel="nofollow">从react源码分析useEffect与useLayoutEffect的执行细节</a> 这篇文章里解答了我的困惑。</p>
-<p>React通过MessageChannel 来让useEffect 的调用延迟到下一次事件循环（MessageChannel的回调任务归属于宏任务）。而本次事件循环结束后，浏览器会进行重绘，接着才会进入下一次事件循环，这样才实现了useEffect 的延迟调用。</p>
-<p>在useLayoutEffect 中setState 时，产生的任务的优先级是「同步」。</p>
-<p>const [count, setCount] = useState(0);</p>
-<p>useLayoutEffect(() =&gt; {<br>
-if (count === 0) {<br>
-setCount(100);<br>
-}<br>
-}, []);</p>
-<p>return </p><h1>{count}</h1>;<p></p>
-<p>上面的代码，页面加载完，过程中不会有count为0的时刻。</p>
-<p>页面一开始加载，render阶段结束，进入commit阶段，useLayoutEffect 同步被调用，setCount(100) 又触发一次更新，但是因为它处于useLayoutEffect 内，它的优先级是同步的。也就是说，React又带着count为100去重新渲染该组件，count不满于等于0，所以什么都不做。之后页面进行渲染，我们在页面里看到count为100。</p></div>
+<div class="markdown-body" id="postBody" style="font-family: 'ZhuqueFangsong-Regular 2';"><p>在函数组件里，使用useState会返回state与updater函数。</p>
+<p>如果在事件回调函数内，多次调用updater 函数，都会被推进更新队列，等到下次渲染时，进行处理。</p>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-v">App</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">num</span><span class="pl-kos">,</span> <span class="pl-s1">setNum</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-en">useState</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-en">increase</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+
+  <span class="pl-k">return</span> <span class="pl-kos">(</span>
+    <span class="pl-c1">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">onClick</span><span class="pl-c1">=</span><span class="pl-kos">{</span><span class="pl-en">increase</span><span class="pl-kos">}</span><span class="pl-c1">&gt;</span>increase<span class="pl-kos">{</span><span class="pl-s1">num</span><span class="pl-kos">}</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">button</span><span class="pl-c1">&gt;</span>
+  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
