@@ -28,6 +28,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 </style>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css" integrity="sha512-eG8C/4QWvW9MQKJNw2Xzr0KW7IcfBSxljko82RuSs613uOAg/jHEeuez4dfFgto1u6SRI/nXmTr9YPCjs1ozBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.js" integrity="sha512-MdZwHb4u4qCy6kVoTLL8JxgPnARtbNCUIjTCihWcgWhCsLfDaQJib4+OV0O8IS+ea+3Xv/6pH3vYY4LWpU/gbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
 .postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
 .title-right{display:flex;margin:auto 0 0 auto;}
@@ -87,8 +89,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
   <span class="pl-k">return</span> <span class="pl-kos">(</span>
     <span class="pl-c1">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">onClick</span><span class="pl-c1">=</span><span class="pl-kos">{</span><span class="pl-en">increase</span><span class="pl-kos">}</span><span class="pl-c1">&gt;</span>increase<span class="pl-kos">{</span><span class="pl-s1">num</span><span class="pl-kos">}</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">button</span><span class="pl-c1">&gt;</span>
   <span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div></div>
+<span class="pl-kos">}</span></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/ZhaoTim/ZhaoTim.github.io/assets/30540533/52d4f05e-49d2-42a6-aa5a-0fb559e07f22"><img src="https://github.com/ZhaoTim/ZhaoTim.github.io/assets/30540533/52d4f05e-49d2-42a6-aa5a-0fb559e07f22" alt="image" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+<script>
+const viewer = new Viewer(document.querySelector('img'), {
+  inline: true,
+  viewed() {
+    viewer.zoomTo(1);
+  },
+});
+</script>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 </div>
