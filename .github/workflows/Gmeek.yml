@@ -33,7 +33,7 @@ jobs:
 
       - name: Clone source code
         run: |
-          git clone -b $(jq -r ".GMEEK_VERSION" config.json) https://github.com/Meekdai/Gmeek.git /opt/Gmeek
+          git clone -b $(jq -r ".GMEEK_VERSION" config.json) https://github.com/ZhaoTim/Gmeek.git /opt/Gmeek
 
       - name: Install dependencies
         run: |
