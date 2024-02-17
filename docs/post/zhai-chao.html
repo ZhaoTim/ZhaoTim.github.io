@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.org/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://font-01i.pages.dev/font.css" />
+    <link rel="stylesheet" href="https://sentyvanilla.pages.dev/font.css" />
+    <link rel="icon" href="http://meekdai.com/favicon.ico">
+    <script>
+        if(localStorage.getItem("meek_theme")==null){}
+        else if(localStorage.getItem("meek_theme")=="dark"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="dark";}
+        else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
+    </script>
+    
+<meta name="description" content="摘抄">
+<title>摘抄</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: 'ZhuqueFangsong-Regular 2' !important;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+.markdown-body {
+    font-size: 17px;
+    line-height: 1.75;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/style.min.css">
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+<style>#postBody{font-family:SentyVanilla !important; font-size: 22px;background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">摘抄</h1>
+<div class="title-right">
+    
+    <a href="https://zhaotim.github.io/"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path>
+        </svg>
+    </button></a>
+
+    
+    <a href="https://github.com/ZhaoTim/ZhaoTim.github.io/issues/6" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+        </svg>
+    </button></a>
+    
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </button>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody" style="font-family: 'ZhuqueFangsong-Regular 2';"><p>首先，我想开门见山地说出本篇文章主旨，</p>
+<p>想要<a href="https://www.zhihu.com/search?q=%E8%B5%B0%E5%87%BA%E5%BC%BA%E8%BF%AB%E7%97%87&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">走出强迫症</a>，当下就是突破口，时间就是通道！</p>
+<p>朋友们，你的症状不是一朝一夕形成的，更加不是那个突发的某件事给你造成的。</p>
+<p>一定是某个压力源，或者你现在的生活环境等给你带来了一段时间的不安，焦虑，沮丧，怀疑等负面感受。</p>
+<p>这一点请一定清晰地认识到。</p>
+<p>因为我们在生活中有太多的事情要去处理，我们很容易忽略自己的情绪，或者遇到不开心的事情就选择自我安慰，自我调节，好让自己能够逆来顺受地生活下去，让日子继续过下去。</p>
+<p>改变对事情的看法和认知，的确可以在一定程度上调节情绪，甚至稀释情绪。但是各种事情带给我们心灵的刺激，情绪的伤害，就像是身体的擦伤，磕伤，<a href="https://www.zhihu.com/search?q=%E5%88%80%E4%BC%A4&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">刀伤</a>一样，我们可以给他们上药，打针，甚至手术，但那不代表那些伤害就不存在，不代表一切就能恢复如初。</p>
+<p>情绪也是同样。比如很努力的你，考试却拿到了一个很差的分数。看到分数的那一刻你的内心一定是沮丧，难过，不自信的，之后你也许会安慰自己说，没事的，这仅仅是一次小测试，失败乃成功之母，我相信我下次一定会考好的。想完这些，你心里会舒服一点，又感觉到了希望。但这不代表之前的那些情绪就没有存在过，你也许会带着更大的心理压力往前走... 在时间的流逝下，自身安全感匮乏，容易焦虑的你，情绪一点点累积，累积，累积... 最后不知道一个什么契机，症状爆发了！</p>
+<p>这才是强迫症形成的真相！</p>
+<p>由于一段时间以来的焦虑不安，加上某个事件的触发（极度不安的心理状况下即使没有事件也会形成强迫），慢慢地慢慢地你的情绪和<a href="https://www.zhihu.com/search?q=%E8%B4%9F%E9%9D%A2%E6%80%9D%E7%BB%B4&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">负面思维</a>取代了理性思考和自我意识。于是一旦发生点什么事情，或者什么事情也没有发生，仅仅是你的脑海中闪过的一个念头，都能打乱你早已溃疡的内心世界，激活你本来就已经面目全非的情绪状态，焦虑感像翻江倒海一般涌了过来。正是这个焦虑感更让你觉得头脑中的那些念头都是真的，那些完全违背客观事实的东西有必要去关注，那些极低概率事件还是有可能发生，那些莫名其妙，匪夷所思的问题如果不去解决，不去关注，就会产生大问题，造成不可挽回的损失。<br>
+就这样，你陷入了症状之中。<br>
+毫无疑问，症状中的你，无法不认同思维告诉你的一切，所以你才会不停地去想，去检查，去洗手...<br>
+如果你也认同以上内容，<br>
+那我想请问大家一个问题，既然症状是在一段时间的累积下形成的，那么我们需要怎么做才能走出症状呢？<br>
+没错，答案就是时间。<br>
+时间可以造就一切，也可以毁了一切。<br>
+时间可以形成症状，也可以稀释症状。<br>
+因此，各位要做的事情，其实很简单！<br>
+走出强迫症的道路就在眼前，就是现在，就是此时此刻！<br>
+无论你脑海中的某种恐怖看上去多么真实！它都仅仅是你的症状，仅此而已！<br>
+它绝然没有控制你的力量！你是比它更为强大的存在！<br>
+也许症状中的你没有办法感受到自身的力量，甚至完全被症状牵着鼻子走，也许你此时此刻感到非常痛苦，又十分无奈... 甚至有一种叫天天不应，叫地地不灵的感受，身边却没有人能够理解你。不要怪他们，没有这个<a href="https://www.zhihu.com/search?q=%E6%83%85%E7%BB%AA%E9%9A%9C%E7%A2%8D&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">情绪障碍</a>的人，确实不能理解你为什么要在那件事情上纠结。他们不能够理解你为什么要不停洗手，为什么要在意自己走路的姿势，为什么要去管自己的余光看到了什么，也不能理解你为什么要为了确认一些根本不存在，或者极低概率的事情而穷思竭虑，痛苦不已... 说实话，如果你走出症状，你都不能够理解自己。<br>
+那么如何走出来呢？<br>
+之前说过，时间可以稀释一切。<br>
+你也许会问我，既然时间可以稀释一切，为什么那么多人在症状中好几年，甚至十几年都走不出来？<br>
+答案很简单！因为你把时间都投入到了症状当中! 你把所有的注意力，精力，甚至还有些专门辞职，休学，就是为了处理强迫症！打算把强迫症处理好了再继续生活。这真是大错特错！<br>
+强迫症最喜欢你没事干。或者说你的思维最喜欢你闲着，然后他就有时间和机会侵占你所有的注意力！当你把时间和精力都投入到焦虑情绪带给你的思维中，或者行为中，请问时间如何稀释焦虑，你的症状如何淡化？<br>
+你有没有想过，你的强迫症也很累了，你的思维，行为也很累了。他们也想你快点走出来，但是你却搞错了方向，迟迟出不来。<br>
+所以，接下来要说的请大家认真听！<br>
+想要走出强迫症，你务必要和症状抢时间，和症状抢注意力，和症状展开拉锯战，并做好持久战的心理准备！<br>
+什么意思？<br>
+举个例子。<br>
+比如我是一个<a href="https://www.zhihu.com/search?q=%E6%B4%81%E7%99%96%E6%82%A3%E8%80%85&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">洁癖患者</a>，我坐在家里看电视，好好地突然一个念头冒出来 “地板脏了”，心里开始感受到不安，焦虑，总想去擦地板。这个时候就是症状来了！如果这个时候你去擦地板，就是跟随症状。如果你不去擦地板，症状就会搞得你很焦虑，脑子里又是各种念头乱飞。<br>
+这个时候怎么办？首先肯定不建议你去跟随症状擦地板，因为之前提到过你把时间交给症状，就会拉长症状持续的时间。其次我不建议你什么都不干，坐在那干熬，忍受焦虑和各种你觉得很真实的念头，因为你恐怕熬不住，用不了多久就开始跟随症状了。<br>
+我建议你赶紧把注意力转移出去！做点什么，持续地做点什么！比如开始工作，开始学习，开始看书，开始画画，开始写作，开视拼图，开始看电视剧，开始刷抖音，开始走出家门和朋友聚会，开始打电话聊视频... 总之要有一个事情把你的注意力吸住，把你当下的时间一定程度上占住！然后你在做当下的那个事情的同时，那些念头和情绪就没有办法占据你当下全部的时间。你就像一个战士一样得到了回到当下的武器！那个武器就是你目前正在做的事情！<br>
+当你为所当为（做当下的事情），那些情绪和思维的东西肯定还在那，他们好像巨大的吸铁石，想把你的注意力从你手头上的事情拉走，他们似乎有巨大的力量。这是很正常的！<br>
+这个时候有两个<a href="https://www.zhihu.com/search?q=%E8%B7%AF%E5%BE%84&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">路径</a></p>
+<ol>
+<li>如果你可以忍受那种<a href="https://www.zhihu.com/search?q=%E7%84%A6%E8%99%91%E4%B8%8D%E5%AE%89&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">焦虑不安</a>，你就不要理会情绪，更不用理会思维，只要做自己手上的事情就可以了。那个焦虑和念头，会随着你做事情的进行慢慢淡化。你的注意力会越来越多地可以放在当下的事情上。当然，他们可能会反复出现，但是整个你是越来越轻松的状态。</li>
+<li>如果你焦虑程度很深，你没办法不理会那些你感觉很真实的念头，没办法不去做点什么缓解自己的焦虑情绪。也有办法。就是你跟随一下，你处理一下，你去获得一个那个短暂的假的轻松感。然后马上投入到当下的事情上面去！马上！他们再来的时候，你要学会觉知它们了，你就知道他们根本是无法通过执行<a href="https://www.zhihu.com/search?q=%E5%BC%BA%E8%BF%AB%E6%80%9D%E7%BB%B4&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3052059504%7D" rel="nofollow">强迫思维</a>和行为而消失的。<br>
+你觉知他们，你也许会不由自主地和他们对话，不管，顺其自然，该怎么样就怎么样。但是你就是不停下手头上的事，你就是目的本位，把注意力尽可能地转到你正在做的事情上面去，为所当为！<br>
+然后就回到了上个情况：那个焦虑和念头，会随着你做事情的进行慢慢淡化。你的注意力会越来越多地可以放在当下的事情上。当然，他们可能会反复出现，但是整个你是越来越轻松的状态。<br>
+持续地这么去做！这么去实践！你就能越来越多地活在当下的生活里，而不是你思维和情绪给你造成的障碍里！症状就会慢慢淡化，淡化... 然后你就出来了！那是一种什么感觉呢。<br>
+就是念头，想法也许还会出现，但是你不焦虑了。而没有焦虑，就没有强迫。<br>
+慢慢地，你觉得那些匪夷所思的念头和想法，还会出现吗？<br>
+还说一个题外话，之前也说过的，除了做你的生活中主线事情，比如工作，学业... 你也需要去做一些能让自己情绪放松，神经舒缓的事情，唱歌电影聊天逛街散步... 但最好不要太静，太安静的时候你容易陷入思维中，而你现在的最大的问题就是你的注意力无法从思维中拔出，直至疯狂... 所以你的注意力要外投。比如我最喜欢就是逛街，我逛街的时候注意力能够一定程度上放在商品上... 人也比较放松。我建议你看一些好看的，剧情冲突较大，的电影电视剧，喜欢看综艺也是不错的，玩一些需要专注和思考的，或者夺人眼球的游戏，比如棋牌类益智类，.. 等等，都是好的。只要是情绪比较放松，注意力一定程度上可以外投就可以。不在于你做什么，每个人喜欢的事情不一样，重要的是你能在那件事情中感到一丝轻松愉悦，就好。</li>
+</ol>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<script>
+mediumZoom(document.querySelectorAll('img'))
+document.querySelectorAll('a').forEach(item => {
+    if(item.getElementsByTagName('img').length > 0) {
+        item.onclick = (e) => {
+    e.preventDefault();
+}
+    }
+})
+</script>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://zhaotim.github.io/"> TimZhao </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'post': 'M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM3.5 6.25a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm.75 2.25h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Z', 'link': 'm7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z', 'about': 'M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z', 'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'search': 'M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z', 'rss': 'M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.502 10.502 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7.002 7.002 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.503 5.503 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489ZM2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z', 'upload': 'M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z'};
+var utterancesLoad=0;
+if(localStorage.getItem("meek_theme")==null){localStorage.setItem("meek_theme","light");changeLight();}
+else if(localStorage.getItem("meek_theme")=="dark"){changeDark();}
+else if(localStorage.getItem("meek_theme")=="light"){changeLight();}
+
+function changeDark(){
+    document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="dark";
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList["moon"]);
+    document.getElementById("themeSwitch").parentNode.style.color="#00f0ff";
+    if(utterancesLoad==1){utterancesTheme("dark-blue");}
+}
+function changeLight(){
+    document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList["sun"]);
+    document.getElementById("themeSwitch").parentNode.style.color="#ff5000";
+    if(utterancesLoad==1){utterancesTheme("github-light");}
+}
+function modeSwitch(){
+    if(document.getElementsByTagName("html")[0].attributes[0].value=="light"){changeDark();localStorage.setItem("meek_theme","dark");}
+    else{changeLight();localStorage.setItem("meek_theme","light");}
+}
+function utterancesTheme(theme){
+    const message = {type: 'set-theme',theme: theme};
+    const iframe = document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+}
+
+console.log("\n %c Gmeek last %c https://github.com/Meekdai/Gmeek \n\n", "color: #fff; background-image: linear-gradient(90deg, rgb(47, 172, 178) 0%, rgb(45, 190, 96) 100%); padding:5px 1px;", "background-image: linear-gradient(90deg, rgb(45, 190, 96) 0%, rgb(255, 255, 255) 100%); padding:5px 0;");
+</script>
+
+<script>
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","ZhaoTim/ZhaoTim.github.io");
+    script.setAttribute("issue-term","title");
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else{script.setAttribute("theme","github-light");}
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+</script>
+
+<script>changeDark();</script>
+
+
+</html>
