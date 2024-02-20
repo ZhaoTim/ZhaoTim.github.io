@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="//cdn.staticfile.org/Primer/21.0.7/primer.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://font-01i.pages.dev/font.css" />
-    <link rel="stylesheet" href="https://sentyvanilla.pages.dev/font.css" />
-    <link rel="stylesheet" href="https://shiguang.pages.dev/font.css" />
     <link rel="icon" href="http://meekdai.com/favicon.ico">
     <script>
         if(localStorage.getItem("meek_theme")==null){}
@@ -24,14 +22,9 @@
 body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: 'ZhuqueFangsong-Regular 2' !important;line-height: 1.25;}
 #header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
 #footer {margin-top:64px; text-align: center;font-size: small;}
-.markdown-body {
-    font-size: 17px;
-    line-height: 1.75;
-}
+
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/style.min.css">
 <style>
 .postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
 .title-right{display:flex;margin:auto 0 0 auto;}
@@ -112,16 +105,6 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </blockquote>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
-<script>
-mediumZoom(document.querySelectorAll('img'))
-document.querySelectorAll('a').forEach(item => {
-    if(item.getElementsByTagName('img').length > 0) {
-        item.onclick = (e) => {
-    e.preventDefault();
-}
-    }
-})
-</script>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 </div>
