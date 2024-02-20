@@ -38,6 +38,7 @@ jobs:
           GMEEK_VERSION=$(jq -r ".GMEEK_VERSION" config.json)
           git clone https://github.com/ZhaoTim/Gmeek.git /opt/Gmeek;
           cd /opt/Gmeek/
+          git pull
 
       - name: Install dependencies
         run: |
