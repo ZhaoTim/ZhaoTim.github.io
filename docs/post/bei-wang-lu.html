@@ -17,7 +17,7 @@
     
 <meta name="description" content="备忘录">
 <title>备忘录</title>
-<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
 
 </head>
 <style>
@@ -78,21 +78,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody" style="font-family: 'ZhuqueFangsong-Regular 2';"><p>在函数组件里，使用useState会返回state与updater函数。</p>
-<p>如果在事件回调函数内，多次调用updater 函数，都会被推进更新队列，等到下次渲染时，进行处理。</p>
-<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-v">App</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">num</span><span class="pl-kos">,</span> <span class="pl-s1">setNum</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-en">useState</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-k">const</span> <span class="pl-en">increase</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-s1">setNum</span><span class="pl-kos">(</span><span class="pl-s1">num</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-
-  <span class="pl-k">return</span> <span class="pl-kos">(</span>
-    <span class="pl-c1">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">onClick</span><span class="pl-c1">=</span><span class="pl-kos">{</span><span class="pl-en">increase</span><span class="pl-kos">}</span><span class="pl-c1">&gt;</span>increase<span class="pl-kos">{</span><span class="pl-s1">num</span><span class="pl-kos">}</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">button</span><span class="pl-c1">&gt;</span>
-  <span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/ZhaoTim/ZhaoTim.github.io/assets/30540533/52d4f05e-49d2-42a6-aa5a-0fb559e07f22"><img src="https://github.com/ZhaoTim/ZhaoTim.github.io/assets/30540533/52d4f05e-49d2-42a6-aa5a-0fb559e07f22" alt="image" style="max-width: 100%;"></a></p></div>
+<div class="markdown-body" id="postBody" style="font-family: 'ZhuqueFangsong-Regular 2';"><p><code class="notranslate">em</code>是相对单位，当我们将<code class="notranslate">em</code>作用于元素时，<code class="notranslate">1em</code>等于该元素的<strong>字体大小</strong>。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <script>
 mediumZoom(document.querySelectorAll('img'))
