@@ -112,7 +112,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </blockquote>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
-<div id="back-to-top" style="font-size:30px;position: fixed;right: 20px; bottom: 20px;">👆</div>
+<div id="back-to-top" style="font-size:30px;position: fixed;right: 20px; bottom: 20px;display: none;transition: opacity 0.5s;">👆</div>
 <script>
 mediumZoom(document.querySelectorAll('img'))
 document.querySelectorAll('a').forEach(item => {
@@ -212,6 +212,19 @@ function iFrameLoading(){
         }
     }
 }
+
+    window.addEventListener('scroll', function() {
+        var fixedDiv = document.querySelector('#back-to-top');
+        if (window.scrollY > 0) {
+            fixedDiv.style.display = 'block';
+            fixedDiv.style.opacity = 1;
+        } else {
+            fixedDiv.style.opacity = 0;
+            setTimeout(function() {
+                fixedDiv.style.display = 'none';
+            }, 500); // 等待动画结束后再隐藏
+        }
+    });
 
 </script>
 
