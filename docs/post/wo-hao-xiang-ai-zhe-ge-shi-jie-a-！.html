@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://font-01i.pages.dev/font.css" />
     <link rel="stylesheet" href="https://sentyvanilla.pages.dev/font.css" />
     <link rel="stylesheet" href="https://shiguang.pages.dev/font.css" />
+    <link rel="stylesheet" href="https://font-fangsong.pages.dev/font.css" />
     <link rel="icon" href="http://meekdai.com/favicon.ico">
     <script>
         if(localStorage.getItem("meek_theme")==null){}
@@ -82,7 +83,6 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>在老家，找不到工作，每天起床以后，强迫症就开始犯了，这个过程家里没有人，我就自己挺着。到了晚上家人回来，跟他们说自己的恐惧也得不到想要的理解，然后他们睡着了，整个黑夜又留给了我自己，继续<strong>恐惧害怕</strong>。</p>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
-<div id="back-to-top" style="font-size:30px;position: fixed;right: 20px; bottom: 20px;display: none;transition: opacity 0.5s;">👆</div>
 <script>
 mediumZoom(document.querySelectorAll('img'))
 document.querySelectorAll('a').forEach(item => {
@@ -182,19 +182,6 @@ function iFrameLoading(){
         }
     }
 }
-
-    window.addEventListener('scroll', function() {
-        var fixedDiv = document.querySelector('#back-to-top');
-        if (window.scrollY > 0) {
-            fixedDiv.style.display = 'block';
-            fixedDiv.style.opacity = 1;
-        } else {
-            fixedDiv.style.opacity = 0;
-            setTimeout(function() {
-                fixedDiv.style.display = 'none';
-            }, 500); // 等待动画结束后再隐藏
-        }
-    });
 
 </script>
 
