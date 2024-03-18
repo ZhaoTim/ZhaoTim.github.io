@@ -92,7 +92,46 @@ body{box-sizing: border-box;min-width: 200px;max-width: 700px;margin: 20px auto;
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> React</li>
 </ul>
 <p>函数式组件一次次地被调用，每次调用产出新的<code class="notranslate">JSX</code>。</p>
-<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-en">useEffect</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span><span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div></div>
+<div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-v">Suspense</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">"react"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-s1">type</span> <span class="pl-kos">{</span> <span class="pl-v">NextPage</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">"next"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-v">Container</span> <span class="pl-k">from</span> <span class="pl-s">"~/components/Container"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-v">HomeAboutMe</span> <span class="pl-k">from</span> <span class="pl-s">"~/components/HomeAboutMe"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-v">PostList</span> <span class="pl-k">from</span> <span class="pl-s">"~/components/PostList"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-v">NextLink</span> <span class="pl-k">from</span> <span class="pl-s">"next/link"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">postFilePaths</span><span class="pl-kos">,</span> <span class="pl-s1">postMdxData</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">"~/utils/mdx"</span><span class="pl-kos">;</span>
+<span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-v">Post</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">"~/types/post"</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-v">Home</span>: <span class="pl-v">NextPage</span><span class="pl-c1">&lt;</span><span class="pl-kos">{</span>
+  <span class="pl-c1">posts</span>: <span class="pl-v">Post</span><span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+  <span class="pl-c1">hasMore</span>: <span class="pl-s1">boolean</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-c1">&gt;</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">{</span> posts<span class="pl-kos">,</span> hasMore <span class="pl-kos">}</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-kos">(</span>
+    <span class="pl-c1">&lt;</span><span class="pl-ent">Suspense</span> <span class="pl-c1">fallback</span><span class="pl-c1">=</span><span class="pl-kos">{</span><span class="pl-c1">null</span><span class="pl-kos">}</span><span class="pl-c1">&gt;</span>
+      <span class="pl-c1">&lt;</span><span class="pl-ent">Container</span><span class="pl-c1">&gt;</span>
+        <span class="pl-c1">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">className</span><span class="pl-c1">=</span><span class="pl-s">"mt-14"</span><span class="pl-c1">&gt;</span>
+          <span class="pl-c1">&lt;</span><span class="pl-ent">PostList</span> <span class="pl-c1">posts</span><span class="pl-c1">=</span><span class="pl-kos">{</span><span class="pl-s1">posts</span><span class="pl-kos">}</span> <span class="pl-c1">/</span><span class="pl-c1">&gt;</span>
+          <span class="pl-kos">{</span><span class="pl-s1">hasMore</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-kos">(</span>
+            <span class="pl-c1">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">className</span><span class="pl-c1">=</span><span class="pl-s">"mt-8"</span><span class="pl-c1">&gt;</span>
+              <span class="pl-c1">&lt;</span><span class="pl-ent">NextLink</span> <span class="pl-c1">href</span><span class="pl-c1">=</span><span class="pl-s">"/posts"</span><span class="pl-c1">&gt;</span>
+                <span class="pl-c1">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">className</span><span class="pl-c1">=</span><span class="pl-s">"text-slate-700 dark:text-gray-400 underline underline-offset-8 decoration-2 decoration-slate-500 hover:decoration-dotted"</span><span class="pl-c1">&gt;</span>
+                  全部文章 _
+                <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">a</span><span class="pl-c1">&gt;</span>
+              <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">NextLink</span><span class="pl-c1">&gt;</span>
+            <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">div</span><span class="pl-c1">&gt;</span>
+          <span class="pl-kos">)</span><span class="pl-kos">}</span>
+        <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">div</span><span class="pl-c1">&gt;</span>
+      <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">Container</span><span class="pl-c1">&gt;</span>
+    <span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-ent">Suspense</span><span class="pl-c1">&gt;</span>
+  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-v">Home</span><span class="pl-kos">;</span>
+
+<span class="pl-k">export</span> <span class="pl-k">function</span> <span class="pl-en">getStaticProps</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">const</span> <span class="pl-s1">hasMore</span> <span class="pl-c1">=</span> <span class="pl-s1">postFilePaths</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">5</span><span class="pl-kos">;</span>
+
+  <span class="pl-k">return</span> <span class="pl-kos">{</span> <span class="pl-c1">props</span>: <span class="pl-kos">{</span> <span class="pl-c1">posts</span>: <span class="pl-en">postMdxData</span><span class="pl-kos">(</span><span class="pl-c1">false</span><span class="pl-kos">,</span> <span class="pl-c1">5</span><span class="pl-kos">)</span><span class="pl-kos">,</span> hasMore <span class="pl-kos">}</span> <span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <script>
 mediumZoom(document.querySelectorAll('img'))
