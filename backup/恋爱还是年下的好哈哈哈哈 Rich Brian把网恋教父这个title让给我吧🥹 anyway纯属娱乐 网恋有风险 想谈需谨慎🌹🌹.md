@@ -1,1 +1,4 @@
-自从 2 月份结石被我排出去后，又患上了尿频尿急的毛病。
+1. createContext
+2. `createContext(defaultValue)`
+3. useContext hook
+4. XXXContext.Provider value 
