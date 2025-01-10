@@ -4,5 +4,5 @@
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last",
     "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
-    "allHead": "<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css' /><style>*{font-family:'Huiwen-mincho' !important;}</style>"
+    "allHead": "<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/GuanKiapTsingKhai/dist/GuanKiapTsingKhai/result.css' /> <style>*{font-family:'GuanKiapTsingKhai' !important;}#postBody{font-size: 22px;line-height: 1.9;}</style>"
 }
