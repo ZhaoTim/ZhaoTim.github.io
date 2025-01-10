@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://ZhaoTim.github.io</link><description>存在过的痕迹</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://ZhaoTim.github.io</link></image><lastBuildDate>Fri, 10 Jan 2025 08:04:18 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>男男女女</title><link>https://ZhaoTim.github.io/post/nan-nan-nv-nv.html</link><description>&gt; [!TIP]&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://ZhaoTim.github.io</link><description>存在过的痕迹</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://ZhaoTim.github.io</link></image><lastBuildDate>Fri, 10 Jan 2025 08:05:57 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>男男女女</title><link>https://ZhaoTim.github.io/post/nan-nan-nv-nv.html</link><description>&gt; [!TIP]&#13;
 &gt; Helpful advice for doing things better or more easily.&#13;
 &#13;
 &#13;
@@ -8,4 +8,4 @@
 。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/nan-nan-nv-nv.html</guid><pubDate>Wed, 08 Jan 2025 13:23:14 +0000</pubDate></item><item><title>eslint</title><link>https://ZhaoTim.github.io/post/eslint.html</link><description>![image](https://github.com/user-attachments/assets/142d81a2-4099-40aa-b536-c28eb706b687)&#13;
 &#13;
 &#13;
-&lt;!-- ##{'style':'&lt;style&gt;*{font-family:'寒蝉全圆体';}&lt;/style&gt;'}## --&gt;。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/eslint.html</guid><pubDate>Wed, 08 Jan 2025 13:19:00 +0000</pubDate></item></channel></rss>
+&lt;!-- ##{'style':'&lt;style&gt;*{font-family:'寒蝉全圆体' !important;}&lt;/style&gt;'}## --&gt;。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/eslint.html</guid><pubDate>Wed, 08 Jan 2025 13:19:00 +0000</pubDate></item></channel></rss>
