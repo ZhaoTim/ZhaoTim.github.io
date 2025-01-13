@@ -13,9 +13,8 @@ cal.paint(
   {
     data: {
       source: data
-      type: 'csv',
       x: 'date',
-      y: d => +d['temp_max'],
+      y: d => +d['value'],
       groupY: 'max',
     },
     date: { start: new Date('2024-01-01') },
