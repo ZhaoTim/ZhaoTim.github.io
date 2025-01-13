@@ -12,7 +12,7 @@ const cal = new CalHeatmap();
 cal.paint(
   {
     data: {
-      source: data
+      source: data,
       x: 'date',
       y: d => +d['value'],
       groupY: 'max',
