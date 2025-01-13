@@ -21,7 +21,7 @@ cal.paint(
       y: d => +d['value'],
       groupY: 'max',
     },
-    date: { start: new Date('2024-01-01') },
+    date: { start: new Date('2024-01-01'), locale: 'zh' },
     range: 12,
     scale: {
       color: {
