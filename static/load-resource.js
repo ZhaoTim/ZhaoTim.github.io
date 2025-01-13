@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 );
             }
 
-                <link rel='stylesheet' href='' /><script src=''></script><script src=''></script><link rel='stylesheet' href=''><style>*{font-family:'GuanKiapTsingKhai' !important;}#postBody{font-size: 22px;line-height: 1.9;}</style><script src=''></script><script src=''></script><script src=''></script><script src=''></script>
 
             loadResources([
                 'https://chinese-fonts-cdn.deno.dev/packages/GuanKiapTsingKhai/dist/GuanKiapTsingKhai/result.css',
