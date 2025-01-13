@@ -6,8 +6,12 @@ contentContainer.append(container);
 const cal = new CalHeatmap();
 
   const data = [
-  { date: '2012-01-01', value: 3 },
-  { date: '2012-01-02', value: 6 },
+  { date: '2024-01-01', value: 3 },
+  { date: '2024-03-14', value: 60 },
+  { date: '2024-06-02', value: 10 },
+  { date: '2024-09-23', value: 100 },
+  { date: '2024-10-31', value: 200 },
+  { date: '2024-12-31', value: 10 },
 ];
 cal.paint(
   {
