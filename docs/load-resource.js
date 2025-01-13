@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js',
                 'https://unpkg.com/cal-heatmap/dist/plugins/Tooltip.min.js',
                 'https://unpkg.com/cal-heatmap/dist/plugins/CalendarLabel.min.js',
-                'https://unpkg.com/cal-heatmap/dist/plugins/LegendLite.min.js'      
+                'https://unpkg.com/cal-heatmap/dist/plugins/LegendLite.min.js',
+                'https://unpkg.com/@popperjs/core@2'
             ]).then(() => {
                 setTimeout(() => {
 const contentContainer = document.querySelector('#content');
