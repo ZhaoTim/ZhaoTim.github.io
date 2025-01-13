@@ -32,7 +32,6 @@ cal.paint(
       label: { text: 'MMM', textAlign: 'start', position: 'top' },
     },
     subDomain: { type: 'ghDay', radius: 2, width: 11, height: 11, gutter: 4 },
-    itemSelector: '#ex-ghDay',
   },
   [
     [
