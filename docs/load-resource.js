@@ -49,12 +49,12 @@
                 'https://chinese-fonts-cdn.deno.dev/packages/GuanKiapTsingKhai/dist/GuanKiapTsingKhai/result.css',
                 'https://d3js.org/d3.v7.min.js',
                 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js',
+            'https://unpkg.com/@popperjs/core@2',
                 'https://unpkg.com/cal-heatmap/dist/plugins/Tooltip.min.js',
                 'https://unpkg.com/cal-heatmap/dist/plugins/CalendarLabel.min.js',
-                'https://unpkg.com/cal-heatmap/dist/plugins/LegendLite.min.js',
-                'https://unpkg.com/@popperjs/core@2'
+                'https://unpkg.com/cal-heatmap/dist/plugins/LegendLite.min.js'
             ]).then(() => {
-                setTimeout(() => {
+                
 const contentContainer = document.querySelector('#content');
 const container = document.createElement('div');
 container.id = 'cal-heatmap'
@@ -128,7 +128,7 @@ cal.paint(
     ],
   ]
 );
-}, 3000)
+
             }).catch((error) => {
                 console.error(error);
             });
