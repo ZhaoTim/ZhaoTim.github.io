@@ -46,6 +46,7 @@
 
 
             loadResources([
+                 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.css',
                 'https://chinese-fonts-cdn.deno.dev/packages/GuanKiapTsingKhai/dist/GuanKiapTsingKhai/result.css',
                 'https://d3js.org/d3.v7.min.js',
                 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js',
