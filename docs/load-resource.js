@@ -13,7 +13,7 @@
             styleElement.textContent = inlineCss;
             document.head.appendChild(styleElement);
         })();
-document.addEventListener('DOMContentLoaded', () => {
+
             function loadResources(urls) {
                 return Promise.all(
                     urls.map((url) => {
@@ -132,5 +132,5 @@ cal.paint(
             }).catch((error) => {
                 console.error(error);
             });
-        });
+ 
   
