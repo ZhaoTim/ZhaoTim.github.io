@@ -1,7 +1,7 @@
 (function() {
             const inlineCss = `
                 * {
-                    font-family: 'GuanKiapTsingKhai' !important;
+                    font-family: 'Huiwen-mincho' !important;
                 }
                 #postBody {
                     font-size: 22px;
@@ -46,7 +46,7 @@
 
 
             loadResources([
-                'https://chinese-fonts-cdn.deno.dev/packages/GuanKiapTsingKhai/dist/GuanKiapTsingKhai/result.css',
+     'https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css'
             ]);
  
   
