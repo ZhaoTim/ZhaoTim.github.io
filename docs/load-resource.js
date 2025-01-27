@@ -9,6 +9,7 @@
                     font-size: 26px;
                     line-height: 1.9;
                 }
+                video { border-radius: 8px; }
             `;
 
             const styleElement = document.createElement('style');
