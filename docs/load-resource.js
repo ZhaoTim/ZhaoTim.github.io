@@ -1,9 +1,9 @@
 (function() {
             const inlineCss = `
-                @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
                 
                 * {
-                    font-family: "Noto Serif SC", serif !important;
+                    font-family: "Roboto Slab", "Noto Serif SC", serif !important;
   font-optical-sizing: auto;                }
                 #postBody {
                     font-size: 26px;
