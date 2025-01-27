@@ -1,8 +1,10 @@
 (function() {
             const inlineCss = `
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+                
                 * {
-                    font-family: 'Huiwen-mincho' !important;
-                }
+                    font-family: "Noto Serif SC", serif !important;
+  font-optical-sizing: auto;                }
                 #postBody {
                     font-size: 26px;
                     line-height: 1.9;
