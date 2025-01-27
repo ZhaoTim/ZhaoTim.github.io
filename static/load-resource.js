@@ -9,7 +9,7 @@
                     font-size: 26px;
                     line-height: 1.9;
                 }
-                video { border-radius: 8px; }
+                video { border-radius: 8px; width: 100%; }
             `;
 
             const styleElement = document.createElement('style');
