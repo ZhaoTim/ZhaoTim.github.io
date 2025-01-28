@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
 
 * {
- 	font-family: "kaiti" !important;
+ 	font-family: "HYZiKuTangYiShanKaiW" !important;
 	font-optical-sizing: auto;
 }
 
@@ -56,7 +56,7 @@ video {
 
             loadResources([
      'https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css',
-		    'https://pub-befc9ff988394c978f412838c0b9b6cf.r2.dev/kaiti_71067422/font.css'
+		    'https://zhaotim.github.io/fonts/font.css'
             ]);
  
   
