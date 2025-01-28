@@ -56,7 +56,7 @@ video {
 
             loadResources([
      'https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css',
-		    'https://img.zhaomeicheng.com/HYZiKuTangYiShanKaiW_73804888/font.css'
+		    'https://pub-befc9ff988394c978f412838c0b9b6cf.r2.dev/HYZiKuTangYiShanKaiW_73804888/font.css'
             ]);
  
   
