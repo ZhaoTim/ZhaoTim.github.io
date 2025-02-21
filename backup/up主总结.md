@@ -1,1 +1,5 @@
-<img width="326" alt="Image" src="https://github.com/user-attachments/assets/4f1f7da4-20b9-4ef9-9cd1-739014e99d67" />
+[埃里奥特酱
+](https://space.bilibili.com/416889787/upload/video)
+
+[中韩CP的书房
+](https://space.bilibili.com/387666873/dynamic?spm_id_from=333.1365.list.card_avatar.click)
