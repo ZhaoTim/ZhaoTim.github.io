@@ -13,6 +13,10 @@
 	line-height: 1.9;
 }
 
+body {
+ 	max-width: 700px !important;
+}
+
 video {
 	border-radius: 8px;
 	width: 100%;
