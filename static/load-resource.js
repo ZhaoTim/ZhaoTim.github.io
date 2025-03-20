@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shafarik&display=swap');
 
 * {
- 	font-family: 'Shafarik', 'HYKaiTi S' !important;
+ 	font-family: 'Shafarik', 'FZFW ZhuZi MinchoS RB' !important;
 	font-optical-sizing: auto;
 }
 
 #postBody {
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 1.9;
 }
 
@@ -63,7 +63,8 @@ video {
      'https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css',
 		    'https://zhaotim.github.io/fonts/font.css',
 		    'https://zhaotim.github.io/jinghua/result.css',
-		    'https://calm-panda-3cb350.netlify.app/result.css'
+		    'https://zhaotim.github.io/fangzhengfwzhuzimingchaojianrb/result.css',
+		    'https://calm-panda-3cb350.netlify.app/result.css',
             ]);
  
   
