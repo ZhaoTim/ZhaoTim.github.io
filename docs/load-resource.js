@@ -6,7 +6,7 @@
 }
 
 #postBody {
-	font-size: 26px;
+	font-size: 30px;
 	line-height: 1.9;
 }
 
