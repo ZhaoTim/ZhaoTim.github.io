@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'FZFW ZhuZi A Old Mincho R' !important;
+ 	font-family: 'FZXingHeiS Light' !important;
 	font-optical-sizing: auto;
 }
 
@@ -57,7 +57,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/fangzhengfwzhuzialaomingchaojianr/result.css',
+    'https://zhaotim.github.io/fangzhengxinghei/result.css',
 ]);
 
 
