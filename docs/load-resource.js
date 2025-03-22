@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'FZXingHeiS Light' !important;
+ 	font-family: 'TsangerXuanSan04 W05' !important;
 	font-optical-sizing: auto;
 }
 
@@ -57,7 +57,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/fangzhengxinghei/result.css',
+    'https://zhaotim.github.io/仓耳玄三04-W05/result.css',
 ]);
 
 
