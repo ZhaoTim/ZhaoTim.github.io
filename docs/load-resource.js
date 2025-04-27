@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'TsangerXuanSan04 W04' !important;
+ 	font-family: 'TsangerJinKai04 W03s' !important;
 	font-optical-sizing: auto;
 }
 
@@ -57,7 +57,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/仓耳玄三04-W04/result.css',
+    'https://zhaotim.github.io/仓耳今楷04-W03/result.css',
 ]);
 
 
