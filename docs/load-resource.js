@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'TsangerJinKai04 W03s' !important;
+ 	font-family: 'TsangerJinKai04 W03' !important;
 	font-optical-sizing: auto;
 }
 
