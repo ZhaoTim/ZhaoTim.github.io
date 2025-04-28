@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'TsangerYayueTi' !important;
+ 	font-family: 'Alibaba Health Font 2.0 CN 45 R' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
 }
@@ -58,7 +58,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/仓耳雅月体/result.css',
+    'https://zhaotim.github.io/阿里健康体2/result.css',
 ]);
 
 
