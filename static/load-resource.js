@@ -1,8 +1,9 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'TsangerJinKai04 W03' !important;
+ 	font-family: 'TsangerYayueTi' !important;
 	font-optical-sizing: auto;
+    letter-spacing: 1px;
 }
 
 #postBody {
@@ -57,7 +58,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/仓耳今楷04-W03/result.css',
+    'https://zhaotim.github.io/仓耳雅月体/result.css',
 ]);
 
 
