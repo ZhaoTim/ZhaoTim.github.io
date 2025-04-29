@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'Alibaba Health Font 2.0 CN 45 R' !important;
+ 	font-family: 'FZFWMaDiSiTiS Light' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
 }
@@ -58,7 +58,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/阿里健康体2/result.css',
+    'https://zhaotim.github.io/方正FW马蒂斯体 简-L/result.css',
 ]);
 
 
