@@ -4,6 +4,7 @@
  	font-family: 'FZFWMaDiSiTiS Light' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 #postBody {
