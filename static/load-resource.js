@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'FZFWMaDiSiTiS Light' !important;
+ 	font-family: 'TsangerZhiXinTi' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
     font-weight: bold;
@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/方正FW马蒂斯体 简-L/result.css',
+    'https://zhaotim.github.io/仓耳知新体/result.css',
 ]);
 
 
