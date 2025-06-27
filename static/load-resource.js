@@ -4,7 +4,7 @@
  	font-family: 'TsangerZhiXinTi' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
-    font-weight: bold;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 #postBody {
