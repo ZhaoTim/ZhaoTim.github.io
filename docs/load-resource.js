@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'TsangerZhiXinTi' !important;
+ 	font-family: 'TsangerJinKai03 W03' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased !important;
@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/仓耳知新体/result.css',
+    '/仓耳今楷03-W03/result.css',
 ]);
 
 
