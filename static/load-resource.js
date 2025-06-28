@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    'https://zhaotim.github.io/仓耳知新体/result.css',
+    '/仓耳知新体/result.css',
 ]);
 
 
