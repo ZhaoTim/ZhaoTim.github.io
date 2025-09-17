@@ -1,11 +1,5 @@
 (function () {
     const inlineCss = `
-* {
- 	font-family: 'TsangerJinKai03 W03' !important;
-	font-optical-sizing: auto;
-    letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased !important;
-}
 
 #postBody {
 	font-size: 30px;
