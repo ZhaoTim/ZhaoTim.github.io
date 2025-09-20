@@ -4,6 +4,5 @@
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last",
     "avatarUrl":"https://i.v2ex.co/9nR5QR58s.png",
-    "allHead": "<script src='https://zhaotim.github.io/load-resource.js'></script>",
-    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>"
+    "allHead": "<script src='https://zhaotim.github.io/load-resource.js'></script>"
 }
