@@ -1,5 +1,11 @@
 (function () {
     const inlineCss = `
+* {
+ 	font-family: 'HYShuFang 55W' !important;
+	font-optical-sizing: auto;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased !important;
+}
 
 #postBody {
 	font-size: 30px;
@@ -53,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/仓耳今楷03-W03/result.css',
+    '/HYShuFang_55W/result.css',
 ]);
 
 
