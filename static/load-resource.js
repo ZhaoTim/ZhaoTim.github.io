@@ -4,7 +4,6 @@
  	font-family: 'HYShuFang 55W' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 #postBody {
