@@ -59,6 +59,7 @@ function loadResources(urls) {
 
 loadResources([
     '/HYShuFang_55W/result.css',
+	'/instant.js',
 ]);
 
 
