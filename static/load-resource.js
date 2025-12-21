@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/HYShuFang_55W/result.css',
+    '/仓耳今楷03-W03/result.css',
 	'/instant.js',
 ]);
 
