@@ -4,7 +4,6 @@
  	font-family: '寒蝉活黑体_復 Bold' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 #postBody {
@@ -40,6 +39,7 @@ function loadResources(urls) {
                     element.src = url;
                     element.async = true; // Use async for non-blocking
                     element.onload = () => resolve(url);
+					element.type = 'module';
                     element.onerror = () => reject(new Error(`Failed to load script: ${url}`));
                 } else if (url.endsWith('.css')) {
                     element = document.createElement('link');

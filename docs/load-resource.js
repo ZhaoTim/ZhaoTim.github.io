@@ -1,5 +1,10 @@
 (function () {
     const inlineCss = `
+* {
+ 	font-family: 'HYShuFang 55W' !important;
+	font-optical-sizing: auto;
+    letter-spacing: 1px;
+}
 
 #postBody {
 	font-size: 30px;
@@ -34,6 +39,7 @@ function loadResources(urls) {
                     element.src = url;
                     element.async = true; // Use async for non-blocking
                     element.onload = () => resolve(url);
+					element.type = 'module';
                     element.onerror = () => reject(new Error(`Failed to load script: ${url}`));
                 } else if (url.endsWith('.css')) {
                     element = document.createElement('link');
@@ -53,7 +59,8 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/仓耳今楷03-W03/result.css',
+    '/HYShuFang_55W/result.css',
+	'/instant.js',
 ]);
 
 
