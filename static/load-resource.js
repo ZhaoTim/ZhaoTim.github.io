@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: 'HYShuFang 55W' !important;
+ 	font-family: '寒蝉活黑体_復 Bold' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased !important;
@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/HYShuFang_55W/result.css',
+    '/ChillHuoGothic_F_Bold/result.css',
 ]);
 
 
