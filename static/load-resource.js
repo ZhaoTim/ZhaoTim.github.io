@@ -1,7 +1,7 @@
 (function () {
     const inlineCss = `
 * {
- 	font-family: '寒蝉活黑体_復 Bold' !important;
+ 	font-family: 'TsangerJinKai02 W05' !important;
 	font-optical-sizing: auto;
     letter-spacing: 1px;
 }
@@ -59,7 +59,7 @@ function loadResources(urls) {
 
 
 loadResources([
-    '/ChillHuoGothic_F_Bold/result.css',
+    '/仓耳今楷02-W05 2/result.css',
 ]);
 
 
