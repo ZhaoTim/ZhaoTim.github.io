@@ -1,2 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Tim</title><link>https://ZhaoTim.github.io</link><description>存在过的痕迹</description><copyright>Tim</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i.v2ex.co/9nR5QR58s.png</url><title>avatar</title><link>https://ZhaoTim.github.io</link></image><lastBuildDate>Mon, 27 Apr 2026 16:40:02 +0000</lastBuildDate><managingEditor>Tim</managingEditor><ttl>60</ttl><webMaster>Tim</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Tim</title><link>https://ZhaoTim.github.io</link><description>存在过的痕迹</description><copyright>Tim</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i.v2ex.co/9nR5QR58s.png</url><title>avatar</title><link>https://ZhaoTim.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 16:42:58 +0000</lastBuildDate><managingEditor>Tim</managingEditor><ttl>60</ttl><webMaster>Tim</webMaster><item><title>跳不过去眼前的大坑</title><link>https://ZhaoTim.github.io/post/tiao-bu-guo-qu-yan-qian-de-da-keng.html</link><description>坑，就在这里，不跳过去，路就无法往前走。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/tiao-bu-guo-qu-yan-qian-de-da-keng.html</guid><pubDate>Thu, 19 Mar 2026 06:11:44 +0000</pubDate></item><item><title>说说记录</title><link>https://ZhaoTim.github.io/post/shuo-shuo-ji-lu.html</link><description>还是怕。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/shuo-shuo-ji-lu.html</guid><pubDate>Sat, 17 Jan 2026 17:21:25 +0000</pubDate></item><item><title>把别人当空气</title><link>https://ZhaoTim.github.io/post/ba-bie-ren-dang-kong-qi.html</link><description>小红书的粉丝已经到了4.7W了，本来是一件开心的事情，但是反而每天因为涨粉变得异常焦虑。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/ba-bie-ren-dang-kong-qi.html</guid><pubDate>Thu, 06 Feb 2025 13:24:28 +0000</pubDate></item><item><title>记录是最好的时刻</title><link>https://ZhaoTim.github.io/post/ji-lu-shi-zui-hao-de-shi-ke.html</link><description>11
+
+```
+const a = 10;
+```
+
+
+
+## 2025年 3月 24日
+
+今天的「订星巴克外卖计划」挑战失败，还是没有敢用自己真实的地址和电话号来订，而是瞎填了地址以后，等到外卖小哥取到了外卖以后，再点击了「修改地址」改成了真实的地址。</description><guid isPermaLink="true">https://ZhaoTim.github.io/post/ji-lu-shi-zui-hao-de-shi-ke.html</guid><pubDate>Wed, 08 Jan 2025 13:19:00 +0000</pubDate></item></channel></rss>
